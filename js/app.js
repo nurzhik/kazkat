@@ -25,10 +25,11 @@ jQuery(document).ready(function ($) {
         autoplaySpeed: 4000,
         speed: 1000,
         arrows: true,
-        slidesToShow: 6,
+        slidesToShow: 5,
         slidesToScroll: 1,
         pauseOnHover: false,
         dots:false,
+        infinite:true,
         initialSlide: 0,
         draggable:false,
         prevArrow: '<span class="slick-prev slick-nav " aria-label="previous"></span>',
@@ -128,6 +129,13 @@ jQuery(document).ready(function ($) {
         $('.lang-select__list').append('<div class="lang-select__option"  >' + thisValue + '</div>');
             
    });
+
+
+    	$(".fancybox").fancybox({
+			openEffect	: 'none',
+			closeEffect	: 'none',
+			});
+		
    });
     
 
