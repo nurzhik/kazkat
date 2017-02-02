@@ -75,6 +75,58 @@ jQuery(document).ready(function ($) {
     });
 
 
+$('.partner-slider').slick({
+        autoplay: false,
+        autoplaySpeed: 4000,
+        speed: 1000,
+        arrows: false,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        pauseOnHover: false,
+        dots:true,
+        infinite:true,
+        initialSlide: 0,
+        draggable:false,
+       
+         responsive: [
+		    {
+		      breakpoint: 960,
+		      settings: {
+		        slidesToShow: 4,
+		        slidesToScroll: 1,
+		      }
+		    },
+		    {
+		      breakpoint: 800,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 1
+		      }
+		    },
+		    {
+		      breakpoint: 630,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 1
+		      }
+		    },
+		    {
+		      breakpoint: 520,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 1
+		      }
+		    },
+		    {
+		      breakpoint: 420,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    }
+
+		]
+    });
 
     
      //menu

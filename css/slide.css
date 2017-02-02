@@ -150,6 +150,14 @@
     width: 95%;
     margin: 0 auto;
 }
+.sertificat {
+    padding: 30px 0;
+    background: #f8f8f8;
+    margin-bottom: 35px;
+}
+.sertificat  .title {
+    margin-bottom: 35px;
+}
 .slick-nav {
     display: block;
     position: absolute;
@@ -171,6 +179,44 @@
 }
 .slider__item.slick-slide img {
     margin: 0 auto;
+}
+.slick-dots {
+    text-align: center;
+    overflow: hidden;
+    padding: 0;
+    margin: 20px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+        margin: 0;
+    right: 0;
+}
+.slick-dots li {
+    padding: 0;
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    margin: 0 4px;
+}
+.slick-dots li button {
+    outline: none;
+    height: 15px;
+    font-size: 0;
+    width: 0;
+    cursor: pointer;
+    overflow: hidden;
+    display: block;
+    color: #fff;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid #dbe4eb;
+}
+.slick-dots li.slick-active button, .slick-dots li:hover button {
+    background: #3a4114;
+    border: 2px solid #3a4114;
+}
+.partner-slider.slick-initialized.slick-slider {
+    padding-bottom: 58px;
 }
 
 @media screen and (max-width: 1200px) {
