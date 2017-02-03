@@ -457,6 +457,7 @@ header {
     }
 }
 
+
 .hover-project {
     position: absolute;
     box-sizing: border-box;
@@ -465,7 +466,7 @@ header {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    padding:15px;
+    padding: 15px;
     text-align: center;
     &__title{
         position: relative;
@@ -511,32 +512,19 @@ header {
     position: relative;
     
 }
-.project-item__small .project-item__img {
-    height: 133px;
-}
-.project-item__small .hover-project__title{
+.grid-item.grid-item--height2 .hover-project__title {
     font-size: 17px;
     margin-bottom: 8px;
-    margin-top: 0;
+    margin-top: 16px;
 }
-
-
-.project-item__small .hover-project{
-    padding-top: 18px;
-}
-.project-item__img:hover .hover-project p, .project-item__img:hover .hover-project__title,.project-item__img:hover .hover-project:before {
-    opacity: 1;
-    transform: scale(1);
-}
-.project-item__img:hover .project-item__name {
-    opacity: 0;
+.grid-item:hover .hover-project:before {
+   opacity: 1;
     transition: all .4s ease-in;
 }
-.project-item__img:hover .hover-project {
-    background: rgba(58, 65, 20, 0.6);
+.grid-item:hover .project-item__name {
+   opacity: 0;
     transition: all .4s ease-in;
 }
-
 .soc-seti {
     float: right;
     margin: 0;
@@ -862,7 +850,44 @@ header {
     }
 
 }
-
+.grid {
+    clear: both;
+}
+.grid-sizer {
+    width: 16.66665%;
+}
+.grid-item {
+    float: left;
+    width: 33.3333%;
+    height: 300px;
+}
+.grid-item--height2 {
+    height: 150px;
+}
+.grid-item a {
+    margin-bottom: 6px;
+    display: block;
+    background-color: #f3f3f3;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 6px;
+    position: absolute;
+    overflow: hidden;
+}
+.grid-item.grid-item--height2 .hover-project {
+    padding-top: 18px;
+}
+.grid-item:hover .hover-project {
+    background: rgba(58, 65, 20, 0.6);
+    transition: all .4s ease-in;
+}
+.grid-item:hover .hover-project p, .grid-item:hover .hover-project__title {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
 
 @media screen and (max-width: 1100px) {
     .cr{
