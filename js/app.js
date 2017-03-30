@@ -141,6 +141,19 @@ $('.partner-slider').slick({
          $mob_part.addClass('m_menu');
     };
      });
+  $('.second-content-drop-down li').click(function(e) {
+    if ($(this).hasClass('active')) {
+        $(this).children('.second-content-drop-down__text').animate({height: "hide"},  "800");
+        $(this).removeClass('active');
+
+     }
+    else{
+    	$(this).siblings().removeClass('active');	
+    	$(this).siblings().children('.second-content-drop-down__text').animate({height: "hide"},  "800");
+    	$(this).addClass('active');
+        $(this).children('.second-content-drop-down__text').animate({height: "show"},  "800");
+    };
+ });
 
 
 
